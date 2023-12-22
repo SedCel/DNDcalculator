@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        Calculator D&D
+    </div>
+
+    <div id="DamageCalc">
+        <p>Калькулятор процентов урона</p><br>
+
+        <label for="procdmg"> Введите процент урона:</label>
+        <input type="text" name="procdmg" id="ProcentDamage"><br>
+
+        <label for="dmg"> Введите урон персонажа:</label>
+        <input type="text" name="dmg" id="Damage"><br>
+
+        <input type="button" onclick="procDmg(document.getElementById('DamageCalc'))" value="Результат"><br>
+        <p id="resultProcDmg"></p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
