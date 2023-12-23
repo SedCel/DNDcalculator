@@ -24,8 +24,17 @@
         <p id="resultProcDmg"></p>
     </div>
     
-    <div id="UvorotCalculate">
+    <div id="VampirCalculate">
+        <p>Калькулятор вытягивания жизни</p><br>
 
+        <label for="ProcVampir">Введите процент вытягивания жизни</label>
+        <input type="text" name="ProcVampir" id="vampirProc"><br>
+
+        <label for="dmg_2">Введите урон</label>
+        <input type="text" name="dmg_2" id="dmg_2"><br>
+
+        <input type="button" value="Результат" onclick="procVampir()">
+        <p id="resultVampir"></p>
 
     </div>
     <script src="main.js"></script>

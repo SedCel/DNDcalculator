@@ -12,3 +12,15 @@ function procDmg(el){
     document.getElementById('resultProcDmg').innerHTML = result;
 }
 
+function procVampir(){
+    let prcVamp = parseFloat(document.getElementById('vampirProc').value);
+    let dmg = parseFloat(document.getElementById('dmg_2').value);
+    let result;
+    let prcPereschet;
+
+    prcPereschet = prcVamp / 100;
+    result = prcPereschet * dmg;
+
+    document.getElementById('resultVampir').innerHTML = result;
+
+}
