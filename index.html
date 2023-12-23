@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>D&D Calculator</title>
 </head>
 <body>
     <div id="header">
@@ -20,8 +20,9 @@
         <label for="dmg"> Введите урон персонажа:</label>
         <input type="text" name="dmg" id="Damage"><br>
 
-        <input type="button" onclick="procDmg(document.getElementById('DamageCalc'))" value="Результат"><br>
+        <input type="button" onclick="procDmg()" value="Результат" class="btn"><br>
         <p id="resultProcDmg"></p>
+
     </div>
     
     <div id="VampirCalculate">
@@ -33,9 +34,22 @@
         <label for="dmg_2">Введите урон</label>
         <input type="text" name="dmg_2" id="dmg_2"><br>
 
-        <input type="button" value="Результат" onclick="procVampir()">
+        <input type="button" value="Результат" onclick="procVampir()" class="btn">
         <p id="resultVampir"></p>
 
+    </div>
+
+    <div id="UvorotCalculate">
+        <p>Калькулятор уворота</p><br>
+
+        <label for="lovkost">Введите вашу ловкость</label>
+        <input type="text" name="lovkost" id="lovkost"><br>
+
+        <label for="cubeResult">Введите что выпало из кубика </label>
+        <input type="text" name="cubeResult" id="cubeResult"><br>
+
+        <input type="button" value="Результат" onclick="uvorot()" class="btn">
+        <p id="uvorotResult"></p>
     </div>
     <script src="main.js"></script>
 </body>

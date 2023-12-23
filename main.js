@@ -24,3 +24,18 @@ function procVampir(){
     document.getElementById('resultVampir').innerHTML = result;
 
 }
+
+function uvorot(){
+    let lovkost = parseFloat(document.getElementById('lovkost').value);
+    let cubeResult = parseFloat(document.getElementById('cubeResult').value);
+    let dopResult;
+    let result;
+
+    lovkost = lovkost / 100;
+    dopResult = lovkost * cubeResult;
+    result = dopResult + cubeResult;
+
+    document.getElementById('uvorotResult').innerHTML = result;
+    
+   
+}
